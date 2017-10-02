@@ -1,6 +1,7 @@
 # Warcry Modified
 # Introduction:
-Fixed by, Tyrelis Warmarch, Warhearth old Project.
+Fixed by, Tyrelis an old project of mine warmarch, warhearth.
+Hopefully someone will finish this in my stead.
 
 # Contribute:
 Want to contribute? Send a commit! :)
