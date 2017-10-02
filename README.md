@@ -1,11 +1,11 @@
 # Warcry Modified
-Introduction:
+# Introduction:
 Fixed by, Tyrelis Warmarch, Warhearth old Project.
 
-Contribute:
+# Contribute:
 Want to contribute? Send a commit! :)
 
-TODO:
+# TODO:
 - Implement sticky topics in forums.
 - Implement lock topics.
 - Implement forum permissions for certain sections.
