@@ -1,10 +1,8 @@
 # Warcry Modified
 Introduction:
-
 Fixed by, Tyrelis Warmarch, Warhearth old Project.
 
 Contribute:
-
 Want to contribute? Send a commit! :)
 
 TODO:
