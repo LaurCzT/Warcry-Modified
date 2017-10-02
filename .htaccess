@@ -1,0 +1,68 @@
+#################################################################################################################
+#Specifies the probability that the gc (garbage collection) routine is started on each request in percent. Defaults to 1 .
+
+php_value session.gc_probability 5
+
+#################################################################################################################
+
+#################################################################################################################
+# session.gc_divisor is the frequency of when the session garbage collection process will be executed
+# 
+# Set it to 10, if traffic is less than 10,000 per day:
+# session.gc_divisor = 10
+#
+# Set it to 100, if traffic is between 10,000 and 100,000 per day:
+# session.gc_divisor = 100
+#
+# Set it to 1000, if traffic is greater than 100,000 per day:
+# session.gc_divisor = 1000
+#
+
+php_value session.gc_divisor 10
+
+#################################################################################################################
+
+#################################################################################################################
+# session.use_trans_sid whether transparent sid support is enabled or not. Defaults to 0 (disabled).
+#
+# Note: For PHP 4.1.2 or less, it is enabled by compiling with --enable-trans-sid. From PHP 4.2.0, trans-sid feature is always compiled.
+# URL based session management has additional security risks compared to cookie based session management.
+# Users may send a URL that contains an active session ID to their friends by email or users may save a URL that contains a session ID to their bookmarks and access your site with the same session ID always, for example.
+#
+
+php_value session.use_trans_sid 0
+
+#################################################################################################################
+
+#################################################################################################################
+# session.gc_maxlifetime specifies the number of seconds after which data will be seen as 'garbage' and potentially cleaned up.
+# Garbage collection may occur during session start (depending on session.gc_probability and session.gc_divisor).
+#
+
+php_value session.gc_maxlifetime 3600
+
+#################################################################################################################
+
+#################################################################################################################
+# Do not change those
+
+php_value session.use_cookies 1
+php_value session.use_only_cookies 1
+
+#Setting the httponly accessibility through the ini_set only PHP 5.2.0 or above
+php_value session.cookie_httponly 1
+
+#Setting cookie path
+php_value session.cookie_path "/"
+
+#Setting cookie secure
+php_flag session.cookie_secure 0
+
+#warn but dont work with bug
+php_value session.bug_compat_42 0
+php_value session.bug_compat_warn 1
+
+# use more secure session ids
+php_value session.hash_function 1
+
+#################################################################################################################
