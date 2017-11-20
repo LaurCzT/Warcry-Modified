@@ -7,7 +7,7 @@ if (!defined('init_config'))
 
 $config['SiteName'] = 'example';
 
-$config['RootPath'] = dirname(__FILE__) . '/';
+$config['RootPath'] = 'E:/xampp/htdocs/'; 		//(No slash at the end)
 $config['BaseURL'] = 'http://www.example.com'; 	//(No slash at the end)
 
 //Must be unique for each website
