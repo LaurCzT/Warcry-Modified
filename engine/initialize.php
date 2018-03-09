@@ -1,6 +1,6 @@
 <?php
 
-require_once 'C:\xampp\htdocs\engine\core.php';
+require_once './engine/core.php';
 
 if (!defined('init_engine'))
 {	
