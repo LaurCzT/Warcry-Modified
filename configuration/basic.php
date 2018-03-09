@@ -6,8 +6,9 @@ if (!defined('init_config'))
 }
 
 $config['SiteName'] = 'example';
+$root_path = $_SERVER['DOCUMENT_ROOT']; //this should get the default document root and allow this to work on linux hosts too
 
-$config['RootPath'] = 'E:/xampp/htdocs/'; 		//(No slash at the end)
+$config['RootPath'] = $root_path; 		//Not needed anymore
 $config['BaseURL'] = 'http://www.example.com'; 	//(No slash at the end)
 
 //Must be unique for each website
